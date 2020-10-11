@@ -7,12 +7,13 @@ pipeline {
 			sh 'echo "Hello World"'
 		}
 	}
-	stage('Buildmore') 
-		steps {
-			sh '''
-				echo "Multipleline shell works too"
-				ls -lah
-			'''
-		}
+	stage('Buildmore') {
+			steps {
+				sh '''
+					echo "Multipleline shell works too"
+					ls -lah
+				'''
+			}
+	  }
 	}
   }
